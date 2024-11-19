@@ -26,6 +26,7 @@ project "Foxin"
 
 	includedirs
 	{
+		"%{prj.name}/src",
 		"%{prj.name}/Vendor/spdlog/include"
 	}
 

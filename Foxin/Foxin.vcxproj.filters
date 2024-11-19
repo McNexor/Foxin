@@ -4,6 +4,9 @@
     <Filter Include="Foxin">
       <UniqueIdentifier>{E99D300D-55B2-58BE-1E34-FC1D8A0755EF}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Foxin\Events">
+      <UniqueIdentifier>{AD691E8A-99CC-AD2E-4252-E6E42E9479B1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Foxin.h" />
@@ -15,6 +18,12 @@
     </ClInclude>
     <ClInclude Include="src\Foxin\EntryPoint.h">
       <Filter>Foxin</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Foxin\Events\ApplicationEvent.h">
+      <Filter>Foxin\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Foxin\Events\Event.h">
+      <Filter>Foxin\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\Foxin\Logger.h">
       <Filter>Foxin</Filter>
