@@ -1,3 +1,4 @@
+#include "fxpre.h"
 #include "Foxin.h"
 
 class Sandbox : public Foxin::Application {

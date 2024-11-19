@@ -25,9 +25,18 @@
     <ClInclude Include="src\Foxin\Events\Event.h">
       <Filter>Foxin\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\Foxin\Events\KeyEvent.h">
+      <Filter>Foxin\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Foxin\Events\MouseEvent.h">
+      <Filter>Foxin\Events</Filter>
+    </ClInclude>
     <ClInclude Include="src\Foxin\Logger.h">
       <Filter>Foxin</Filter>
     </ClInclude>
+    <ClInclude Include="src\fxpre.h" />
+    <ClInclude Include="src\Foxin\Window.h" />
+    <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Foxin\Application.cpp">
@@ -36,5 +45,7 @@
     <ClCompile Include="src\Foxin\Logger.cpp">
       <Filter>Foxin</Filter>
     </ClCompile>
+    <ClCompile Include="src\fxpre.cpp" />
+    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />
   </ItemGroup>
 </Project>

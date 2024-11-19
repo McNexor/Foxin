@@ -1,3 +1,4 @@
+#include "fxpre.h"
 #include "Logger.h"
 
 namespace Foxin {

@@ -1,3 +1,6 @@
 [submodule "Foxin/Vendor/spdlog"]
 	path = Foxin/Vendor/spdlog
 	url = https://github.com/gabime/spdlog
+[submodule "Foxin/Vendor/GLFW"]
+	path = Foxin/Vendor/GLFW
+	url = https://github.com/TheCherno/glfw

@@ -1,7 +1,7 @@
 #pragma once
+#include "fxpre.h"
 #include "Foxin/Core.h"
-#include <string>
-#include <functional>
+
 namespace Foxin {
 	
 	enum class EventType {

@@ -1,7 +1,7 @@
 #pragma once
 
 #include "Event.h"
-#include <sstream>
+
 namespace Foxin {
 
 	class FOXIN_API KeyEvent : public Event {

@@ -10,6 +10,10 @@ workspace "Foxin"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+IncludeDir = {}
+IncludeDir["GLFW"] = "Foxin/Vendor/GLFW/include"
+include "Foxin/Vendor/GLFW"
+
 project "Foxin"
 	location "Foxin"
 	kind "SharedLib"
@@ -17,6 +21,9 @@ project "Foxin"
 
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
+
+	pchheader "fxpre.h"
+	pchsource "Foxin/src/fxpre.cpp"
 
 	files 
 	{
@@ -27,7 +34,13 @@ project "Foxin"
 	includedirs
 	{
 		"%{prj.name}/src",
-		"%{prj.name}/Vendor/spdlog/include"
+		"%{prj.name}/Vendor/spdlog/include",
+		"%{IncludeDir.GLFW}"
+	}
+	links 
+	{ 
+		"GLFW",
+		"opengl32.lib"
 	}
 
 	buildoptions "/utf-8"
@@ -49,7 +62,10 @@ project "Foxin"
 		}
 
 	filter "configurations:Debug"
-		defines "FX_DEBUG"
+		defines {
+			"FX_DEBUG",
+			"FX_ENABLE_ASSERTS"
+		}
 		symbols "On"
 
 	filter "configurations:Release"
